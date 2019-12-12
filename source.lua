@@ -7,16 +7,16 @@ local fr = "What is the value of 'b'? = "--[[text variable]]
 local ss = "The result is: "--[[text variable]]
 
 io.write (fs .. "\n ---------- \n" .. se) --[[show text]]
-a = io.read() --[[data capture]]
+local a = io.read() --[[data capture]]
 
 io.write ("\n" .. tr) --[[show text]]
-x = io.read() --[[data capture]]
+local x = io.read() --[[data capture]]
 
 io.write ("\n" .. fr) --[[show text]]
-b = io.read() --[[data capture]]
+local b = io.read() --[[data capture]]
 
 
-fx = a*x + b --[[equation]]
+local fx = a*x + b --[[equation]]
 io.write ("\n\n\n" .. ss .. fx .. "\n\n") --[[show result]]
 
 os.execute ("pause") --[[prompt command 'pause']]
